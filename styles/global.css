@@ -1,0 +1,7 @@
+body {
+  background-image: url('../img/standing-nf_upscayl_2x_realesrgan-x4plus.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
