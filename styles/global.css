@@ -1,21 +1,187 @@
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 35vw !important;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--bs-body-color);
+  --bs-offcanvas-bg: var(--bs-body-bg);
+  --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-title-line-height: 1.5;
+}
+
 body {
-  background-image: url('');
+  background-image: url('/img/Wallpaper.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  color: white;
   /* max-width: 80vw !important; */
 }
 
-.img-logo{
-  width: 15vw;
+/* NAVBAR */
+.img-logo {
+  width: 10vw;
   min-width: 100px;
   margin: 0 auto;
   display: block;
   background-size: contain;
 }
 
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
 
-/* NAVBAR */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-nav .justify-content-center .flex-grow-1 .pe-3 {
+  text-align: center !important;
+  margin-right: 100rem !important;
+  color: white;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("/icon/burger-menu.svg") !important;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: white !important;
+  --bs-navbar-hover-color: red !important;
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+  --bs-navbar-active-color: white !important;
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-icon-bg: url("/icon/burger-menu.svg") !important;
+  --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+  --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  font-size: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.offcanvas-header {
+  background: rgb(26, 18, 18);
+  color: rgb(143, 10, 10);
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  border-bottom: 1px solid var(--bs-offcanvas-border-color);
+}
+
+@media (max-width: 991px) {
+  .offcanvas-body {
+    padding: var(--bs-offcanvas-padding-y) calc(var(--bs-offcanvas-padding-x) - 1rem);
+    flex-grow: 1;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    overflow-y: auto;
+    background: rgb(26, 18, 18) !important;
+  }
+}
+
+.offcanvas-body {
+  padding: var(--bs-offcanvas-padding-y) calc(var(--bs-offcanvas-padding-x) - 1rem);
+  flex-grow: 1;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  overflow-y: auto;
+  /* background: rgb(26, 18, 18) !important; */
+}
+
+.btn-close {
+  --bs-btn-close-color: #000;
+  --bs-btn-close-bg: url('<svg viewBox=" 0 0 25 25" version=" 1.1" xmlns=" http: //www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>cross</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-469.000000, -1041.000000)" fill="#ffffff"> <path d="M487.148,1053.48 L492.813,1047.82 C494.376,1046.26 494.376,1043.72 492.813,1042.16 C491.248,1040.59 488.712,1040.59 487.148,1042.16 L481.484,1047.82 L475.82,1042.16 C474.257,1040.59 471.721,1040.59 470.156,1042.16 C468.593,1043.72 468.593,1046.26 470.156,1047.82 L475.82,1053.48 L470.156,1059.15 C468.593,1060.71 468.593,1063.25 470.156,1064.81 C471.721,1066.38 474.257,1066.38 475.82,1064.81 L481.484,1059.15 L487.148,1064.81 C488.712,1066.38 491.248,1066.38 492.813,1064.81 C494.376,1063.25 494.376,1060.71 492.813,1059.15 L487.148,1053.48" id="cross" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>');
+  --bs-btn-close-opacity: 0.5;
+  --bs-btn-close-hover-opacity: 0.75;
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-btn-close-focus-opacity: 1;
+  --bs-btn-close-disabled-opacity: 0.25;
+  --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: .25em .25em;
+  color: white;
+  background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+  border: 0;
+  border-radius: .375rem;
+  opacity: var(--bs-btn-close-opacity);
+}
+
+.close {
+  background: transparent;
+  background-image: url("/icon/cross.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  width: 3rem;
+  height: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 500px) {
+  .close {
+    background: transparent;
+    background-image: url("/icon/cross.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.3s ease-in-out;
+    margin-left: 1vw;
+  }
+}
