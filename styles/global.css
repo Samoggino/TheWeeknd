@@ -1,7 +1,21 @@
 body {
-  background-image: url('../img/standing-nf_upscayl_2x_realesrgan-x4plus.jpg');
+  background-image: url('');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* max-width: 80vw !important; */
 }
+
+.img-logo{
+  width: 15vw;
+  min-width: 100px;
+  margin: 0 auto;
+  display: block;
+  background-size: contain;
+}
+
+
+/* NAVBAR */
