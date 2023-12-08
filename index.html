@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/loader.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./icon/logo/favicon-16x16.png">
@@ -20,50 +21,59 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./icon/TheWeekndLogoFinale.png" alt=""
-                    class="img-logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Chiudi</h5>
-                    <button type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/biografia.html">Biografia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/album.html">Album</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/video.html">Video</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Merch</a>
-                        </li>
-                    </ul>
+    <div id="background" style="display: none;">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./icon/TheWeekndLogoFinale.png" alt=""
+                        class="img-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Chiudi</h5>
+                        <button type="button" class="close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/biografia.html">Biografia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/album.html">Album</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/video.html">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Merch</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- FINE NAVBAR -->
+        </nav>
+        <!-- FINE NAVBAR -->
+    </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tempImg = new Image();
+            tempImg.src = './img/low-quality.jpeg'; // Immagine di sfondo più leggera
+            tempImg.onload = function () {
+                const background = document.getElementById('background');
+                background.style.backgroundImage = `url('./img/Wallpaper.png')`; // Immagine di sfondo completa
+                background.style.display = 'block'; // Mostra l'immagine completa
+            };
+        });
 
-
-
-
-
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">

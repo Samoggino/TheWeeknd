@@ -15,7 +15,7 @@
         "**/.gitignore": true,
         "**/target": true,
         "JSON": true,
-        "icon": true,
+        "icon": false,
         ".gitignore": true
     },
     "explorerExclude.backup": {}
