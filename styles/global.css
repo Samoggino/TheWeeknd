@@ -47,7 +47,7 @@ body {
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("/icon/burger-menu.svg") !important;
+  --bs-navbar-toggler-icon-bg: url("../icon/burger-menu.svg") !important;
   --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -76,7 +76,7 @@ body {
 
 
 .navbar-toggler-icon {
-  background-image: url("/icon/burger-menu.svg") !important;
+  background-image: url("../icon/burger-menu.svg") !important;
   background-size: contain;
   width: 2rem;
   height: 2rem;
@@ -125,7 +125,7 @@ body {
 
 .close {
   background: transparent;
-  background-image: url("/icon/cross.svg");
+  background-image: url("../icon/cross.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -142,7 +142,7 @@ body {
 @media (max-width: 500px) {
   .close {
     background: transparent;
-    background-image: url("/icon/cross.svg");
+    background-image: url("../icon/cross.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
