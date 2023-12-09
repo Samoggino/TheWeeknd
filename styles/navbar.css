@@ -81,7 +81,7 @@
   
   #offcanvasNavbar {
     /* background: rgb(26, 18, 18) !impsortant; */
-    font-size: medium;
+    font-size: xx-large;
     transition: all 0.3s ease-in-out;
   }
   
@@ -105,6 +105,13 @@
       font-size: small !important;
     }
   }
+
+  @media (min-width: 1000px) and (max-width: 1300px) {
+    #offcanvasNavbar {
+      font-size: large;
+    }
+  }
+  
   
   .offcanvas-title {
     margin-bottom: 0;
