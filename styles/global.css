@@ -1,33 +1,18 @@
-.offcanvas,
-.offcanvas-lg,
-.offcanvas-md,
-.offcanvas-sm,
-.offcanvas-xl,
-.offcanvas-xxl {
-  --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 35vw !important;
-  --bs-offcanvas-height: 30vh;
-  --bs-offcanvas-padding-x: 1rem;
-  --bs-offcanvas-padding-y: 1rem;
-  --bs-offcanvas-color: var(--bs-body-color);
-  --bs-offcanvas-bg: var(--bs-body-bg);
-  --bs-offcanvas-border-width: var(--bs-border-width);
-  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
-  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
-  --bs-offcanvas-transition: transform 0.3s ease-in-out;
-  --bs-offcanvas-title-line-height: 1.5;
-}
-
 body {
   background-color: black;
   background: url('../img/Wallpaper.png') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body.loading {
   overflow: hidden;
   background-image: url('../img/low-quality.jpeg');
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }

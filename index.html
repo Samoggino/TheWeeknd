@@ -2,27 +2,27 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/scrolling-homepage.css">
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/logo/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./icon/logo/favicon-16x16.png">
     <link rel="manifest" href="./icon/logo/site.webmanifest">
     <link rel="mask-icon" href="./icon/logo/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>TheWeeknd</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-    <div id="background" style="display: none;">
-        <!-- NAVBAR -->
+<body id="background" style="display: none; background-color: black;">
+    <!-- NAVBAR -->
+    <header>
+
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="./icon/TheWeekndLogoFinale.png" alt=""
@@ -43,7 +43,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/biografia.html">Biografia</a>
+                                <a class="nav-link" href="#biografia">Biografia</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/album.html">Album</a>
@@ -59,8 +59,59 @@
                 </div>
             </div>
         </nav>
-        <!-- FINE NAVBAR -->
-    </div>
+    </header>
+
+    <!-- FINE NAVBAR -->
+
+    <main class="scrollable-homepage">
+        <!-- BIOGRAFIA -->
+        <div class="griglia">
+            <div class="item">
+                <p>Testo paragrafo 1</p>
+                <img src="placeholder1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="placeholder2.jpg" alt="">
+                <p>Testo paragrafo 2</p>
+            </div>
+            <div class="item">
+                <p>Testo paragrafo 3</p>
+                <img src="placeholder3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="placeholder4.jpg" alt="">
+                <p>Testo paragrafo 4</p>
+            </div>
+            <div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div><div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div><div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div><div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div><div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div><div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div><div class="item">
+                <p>Testo paragrafo 4</p>
+                <img src="placeholder4.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        ciao
+    </footer>
+
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {

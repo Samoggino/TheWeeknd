@@ -19,7 +19,36 @@
     <title>TheWeeknd - video</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+            color: white;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 10%;
+            max-height: 100%;
+        }
+
+        .scrollable {
+            height: 100vh;
+            overflow-y: scroll;
+            color: white;
+        }
+    </style>
+
 </head>
+
 
 <body>
     <div id="background" style="display: none;">
@@ -44,7 +73,7 @@
                                 <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./biografia.html">Biografia</a>
+                                <a class="nav-link" href="#biografia">Biografia</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./album.html">Album</a>
@@ -62,11 +91,18 @@
         </nav>
         <!-- FINE NAVBAR -->
 
+        
 
-        <script src="../js/loader.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-            </script>
+
+
+        
+    </div>
+
+
+    <script src="../js/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 
 </body>
 
