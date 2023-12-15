@@ -1,15 +1,18 @@
 .scrollable-homepage {
     /* Rimuovi il background: transparent !important; */
-    max-height: 70vh;
-    margin: 10vh 0vh;
+    max-height: 70dvh;
+    margin: 10dvh 0vh;
+    position: fixed;
+    top: 10%;
     width: 100%;
     scroll-behavior: smooth;
     overflow-y: auto;
-    -ms-overflow-style: none;
     background: transparent !important;
     /* IE and Edge */
-    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* Firefox */
+    scrollbar-width: none;
+    color: white;
 }
 
 .scrollable-homepage::-webkit-scrollbar {
@@ -25,18 +28,62 @@
     /* Spazio tra le celle */
 }
 
+/* Stili per schermi più grandi */
 .item {
-    border: 1px solid #ccc;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
-    /* Centra il testo */
+    gap: 6dvw;
+
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+
 }
 
 .item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    /* Per evitare spazi vuoti sotto l'immagine */
-    margin-bottom: 10px;
-    /* Spazio tra immagine e paragrafo */
+    width: 40dvh;
+    /* height: auto; */
+    border-radius: 13px;
+}
+
+.paragraph {
+    font-size: 2dvh;
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-width: 25%;
+}
+
+/* Stili per schermi più piccoli usando media queries */
+@media screen and (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        /* Cambia la direzione dei flex items a colonna */
+    }
+
+    .item img {
+        max-width: 100%;
+        /* Adatta l'immagine alla larghezza del contenitore */
+        height: auto;
+        /* Imposta l'altezza in automatico per mantenere le proporzioni */
+        margin-bottom: 10px;
+    }
+
+    .paragraph {
+        font-size: 2dvh;
+        font-weight: bolder;
+        color: white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        max-width: 80dvw;
+    }
 }
