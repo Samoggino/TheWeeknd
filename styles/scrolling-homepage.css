@@ -1,7 +1,6 @@
 .scrollable-homepage {
     /* Rimuovi il background: transparent !important; */
-    max-height: 70dvh;
-    margin: 10dvh 0vh;
+    max-height: 90dvh;
     position: fixed;
     top: 10%;
     width: 100%;
@@ -20,12 +19,20 @@
     /* Safari and Chrome */
 }
 
+.glass-panel {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+
+}
+
 .griglia {
     display: grid;
     grid-template-columns: 1fr;
-    /* Una colonna */
-    gap: 20px;
-    /* Spazio tra le celle */
+    gap: 15dvh;
 }
 
 /* Stili per schermi più grandi */
@@ -36,19 +43,10 @@
     align-items: center;
     text-align: center;
     gap: 6dvw;
-
-    /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13.3px);
-    -webkit-backdrop-filter: blur(13.3px);
-
 }
 
 .item img {
     width: 40dvh;
-    /* height: auto; */
     border-radius: 13px;
 }
 
@@ -62,19 +60,38 @@
     max-width: 25%;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2dvh;
+    margin-top: 5dvh;
+}
+
+
+.griglia .hello {
+    display: flex;
+    font-size: 10dvh;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 6dvh 0dvh 55dvh;
+}
+
+
 /* Stili per schermi più piccoli usando media queries */
 @media screen and (max-width: 768px) {
     .item {
         flex-direction: column;
-        /* Cambia la direzione dei flex items a colonna */
+        gap: 2dvh;
     }
 
     .item img {
         max-width: 100%;
-        /* Adatta l'immagine alla larghezza del contenitore */
         height: auto;
-        /* Imposta l'altezza in automatico per mantenere le proporzioni */
-        margin-bottom: 10px;
     }
 
     .paragraph {
@@ -84,6 +101,7 @@
         margin: 0;
         padding: 0;
         text-align: center;
-        max-width: 80dvw;
+        max-width: 60dvw;
+        margin-bottom: 2dvh;
     }
 }
