@@ -141,6 +141,7 @@
   line-height: var(--bs-offcanvas-title-line-height);
   transform: all 0.3s ease-in-out;
   font-size: larger !important;
+  font-weight: bold;
 }
 
 @media (min-width: 700px) {

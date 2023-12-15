@@ -10,7 +10,7 @@
     place-content: center;
     text-transform: uppercase;
     height: 40dvh;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-bottom: 37dvh;
     font-size: 5dvw;
 }
@@ -48,6 +48,11 @@ div.fg {
 }
 
 @media (max-width: 991px) {
+    .wrapper:hover {
+        transition: all 0.15s ease-in-out;
+        transform: scale(1.05);
+    }
+
     .wrapper>div {
         font-size: 10dvw;
     }

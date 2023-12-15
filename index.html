@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/loader.css">
     <link rel="stylesheet" href="./styles/scrolling-homepage.css">
     <link rel="stylesheet" href="./styles/title.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/logo/favicon-32x32.png">
@@ -22,10 +23,10 @@
 
 <body id="background" style="display: none; background-color: black;">
     <!-- NAVBAR -->
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./icon/TheWeekndLogoFinale.png" alt=""
+                <a class="navbar-brand" href="#home"><img src="./icon/TheWeekndLogoFinale.png" alt=""
                         class="img-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -40,13 +41,13 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#biografia">Biografia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#bruno">Album</a>
+                                <a class="nav-link" href="#album">Album</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./pages/video.html">Video</a>
@@ -64,8 +65,8 @@
     <!-- FINE NAVBAR -->
 
     <main class="scrollable-homepage">
-        <!-- BIOGRAFIA -->
-        <section class="griglia" id="biografia">
+
+        <section class="griglia" id="home">
             <div class="item">
                 <div class="wrapper">
                     <div class="bg"> The Weeknd </div>
@@ -73,67 +74,49 @@
                 </div>
             </div>
             <div class="griglia glass-panel">
-                <div class="item">
-                    <p class="paragraph" id="bruno">The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
-                        "Blinding
-                        Lights" ha
-                        costantemente
-                        dominato le classifiche musicali internazionali. Molte delle sue canzoni hanno raggiunto
-                        la vetta della Billboard Hot 100 e stabilito record di streaming, confermando il suo impatto
-                        nella musica pop.</p>
-                    <img src="./img/Discography.png" alt="">
-                </div>
-                <div class="item">
-                    <p class="paragraph" id="bruno">The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
-                        "Blinding
-                        Lights" ha
-                        costantemente
-                        dominato le classifiche musicali internazionali. Molte delle sue canzoni hanno raggiunto
-                        la vetta della Billboard Hot 100 e stabilito record di streaming, confermando il suo impatto
-                        nella musica pop.</p>
-                    <img src="./img/Discography.png" alt="">
-                </div>
-                <div class="item">
-                    <p class="paragraph" id="bruno">The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
-                        "Blinding
-                        Lights" ha
-                        costantemente
-                        dominato le classifiche musicali internazionali. Molte delle sue canzoni hanno raggiunto
-                        la vetta della Billboard Hot 100 e stabilito record di streaming, confermando il suo impatto
-                        nella musica pop.</p>
-                    <img src="./img/Discography.png" alt="">
-                </div>
-                <div class="item">
-                    <p class="paragraph" id="bruno">The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
-                        "Blinding
-                        Lights" ha
-                        costantemente
-                        dominato le classifiche musicali internazionali. Molte delle sue canzoni hanno raggiunto
-                        la vetta della Billboard Hot 100 e stabilito record di streaming, confermando il suo impatto
-                        nella musica pop.</p>
-                    <img src="./img/Discography.png" alt="">
-                </div>
-                <div class="item">
-                    <p class="paragraph" id="bruno">The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
-                        "Blinding
-                        Lights" ha
-                        costantemente
-                        dominato le classifiche musicali internazionali. Molte delle sue canzoni hanno raggiunto
-                        la vetta della Billboard Hot 100 e stabilito record di streaming, confermando il suo impatto
-                        nella musica pop.</p>
-                    <img src="./img/Discography.png" alt="">
-                </div>
+
+                <!-- BIOGRAFIA -->
+                <section id="biografia">
+                    <span class="paragraph-title-bigger">Biografia</span>
+                    <div class="item">
+                        <span class="paragraph-title">Biografia</span>
+                        <img src="./img/Biography.png" alt="">
+                        <p class="paragraph">
+                            The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
+                            "Blinding Lights" ha costantemente dominato le classifiche musicali internazionali.
+                            Molte
+                            delle sue canzoni hanno raggiunto la vetta della Billboard Hot 100 e stabilito record di
+                            streaming, confermando il suo impatto
+                            nella musica pop.</p>
+                    </div>
+                </section>
+
+                <!-- ALBUM -->
+                <section id="album">
+                    <span class="paragraph-title-bigger">Album</span>
+                    <div class="item">
+                        <span class="paragraph-title">Album</span>
+                        <p class="paragraph">
+                            I suoi album, come "Beauty Behind the Madness," "Starboy," e "After Hours," hanno
+                            debuttato
+                            al numero uno della Billboard 200, ottenendo plauso dalla critica e generando una serie
+                            di
+                            singoli di successo che hanno catturato l'attenzione del pubblico globale.</p>
+                        <img src="./img/Discography.png" alt="">
+                    </div>
+                </section>
+
+
+
+
+                <footer class="footer">
+                    ciao
+                </footer>
             </div>
-
-
-
-            <footer class="footer">
-                ciao
-            </footer>
-
         </section>
-    </main>
 
+
+    </main>
 
 
 
@@ -147,7 +130,6 @@
                 background.style.display = 'block'; // Mostra l'immagine completa
             };
         });
-
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
