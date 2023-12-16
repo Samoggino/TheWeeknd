@@ -91,6 +91,11 @@
     padding-bottom: 5dvh;
 }
 
+.scroll-section {
+    max-height: 90dvh;
+}
+
+
 /* Stili per schermi più piccoli usando media queries */
 @media screen and (max-width: 991px) {
     .item {
@@ -144,3 +149,9 @@
     }
 }
 
+@media screen and (min-width: 991px) {
+    .griglia {
+        gap: 30dvh;
+    }
+
+}
