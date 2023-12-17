@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/scrolling-homepage.css">
     <link rel="stylesheet" href="./styles/title.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/spotify.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/logo/favicon-32x32.png">
@@ -48,17 +49,18 @@
                                 <a class="nav-link" href="#biografia">Biografia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#album">Album</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/video.html">Video</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://xo.store/">Store</a>
+                                <a class="nav-link" href="#discografia">Discografia</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#eventi">Eventi</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/video.html">Musica</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://xo.store/">Store</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -73,7 +75,7 @@
         <section class="griglia" id="home">
             <div class="item">
                 <div class="wrapper">
-                    <div class="bg"> The Weeknd </div>
+                    <div class="bg"> The Weeknd</div>
                     <div class="fg"> The Weeknd </div>
                 </div>
             </div>
@@ -87,29 +89,33 @@
                             <span class="paragraph-title">Biografia</span>
                             <img src="./img/Biography.png" alt="">
                             <p class="paragraph">
-                                The Weeknd, con hit come "Can't Feel My Face", "The Hills" e
-                                "Blinding Lights" ha costantemente dominato le classifiche musicali internazionali.
+                                The Weeknd, con hit come <strong>Can't Feel My Face</strong>, <strong>The Hills</strong>
+                                e
+                                <strong>Blinding Lights</strong> ha costantemente dominato le classifiche musicali
+                                internazionali.
                                 Molte
                                 delle sue canzoni hanno raggiunto la vetta della Billboard Hot 100 e stabilito record di
                                 streaming, confermando il suo impatto
-                                nella musica pop.</p>
+                                nella musica pop.
+                            </p>
                         </div>
                     </div>
                 </section>
 
                 <!-- ALBUM -->
-                <section class="scroll-section" id="album">
+                <section class="scroll-section" id="discografia">
                     <div class="grid-bigger album">
-                        <span class="paragraph-title-bigger">Album</span>
+                        <span class="paragraph-title-bigger">Discografia</span>
                         <div class="item">
-                            <span class="paragraph-title">Album</span>
+                            <span class="paragraph-title">Discografia</span>
                             <p class="paragraph">
-                                I suoi album, come "Beauty Behind the Madness," "Starboy," e "After Hours," hanno
+                                I suoi album, come <strong>Beauty Behind the Madness</strong>, <strong>Starboy</strong>,
+                                e <strong>After Hours</strong>, hanno
                                 debuttato
                                 al numero uno della Billboard 200, ottenendo plauso dalla critica e generando una serie
                                 di
-                                singoli di successo che hanno catturato l'attenzione del pubblico globale.</p>
-                            <span class="goto-spotify">Clicca qui per ascoltare</span>
+                                singoli di successo che hanno catturato l'attenzione del pubblico globale.
+                            </p>
                             <img src="./img/Discography.png" alt="">
                         </div>
                         <span class="goto-spotify-bigger">Clicca qui per ascoltare bigger</span>
@@ -117,11 +123,47 @@
                 </section>
 
                 <!-- Eventi -->
+                <section class="scroll-section">
+                    <span class="paragraph-title-bigger">After Hours</span>
+                    <div class="item">
+                        <span class="paragraph-title">After Hours</span>
+                        <p class="paragraph">
+                            <strong>After Hours</strong> viaggia tra dolore, amore e oscurità con testi profondi.
+                            <strong>Blinding Lights</strong> ha
+                            spinto l'album in cima alle classifiche, confermando il talento eclettico dell'artista,
+                            premi e record conquistati.
+                            <span class="goto-spotify-bigger">
+                                ${createSpotifyLink("https://open.spotify.com/intl-it/album/4yP0hdKOZPNshxUOjY0cZj?si=qqq_rbmgRxG-oRWrp1SrBg")}
+                            </span>
+                        </p>
+                        <img src="./img/AfterHours.png" href="#album" alt="">
+                    </div>
+                </section>
+                <section class="scroll-section">
+                    <span class="paragraph-title-bigger">Starboy</span>
+                    <div class="item">
+                        <span class="paragraph-title">Starboy</span>
+                        <img src="./img/Starboy.png" href="#album" alt="">
+                        <p class="paragraph">
+                            <a href="https://www.google.com/"><strong>Starboy</strong></a> è un concentrato di energia e
+                            stile. I brani
+                            trainanti come
+                            <strong>Starboy</strong> e <strong>I Feel it Coming</strong> hanno dominato le classifiche,
+                            consolidando il talento
+                            distintivo di The Weeknd e guadagnandogli riconoscimenti e premi internazionali.
+                            <span class="goto-spotify-bigger">
+                                ${createSpotifyLink("https://open.spotify.com/intl-it/album/2ODvWsOgouMbaA5xf0RkJe?si=B6hLM-yjRJ-N-v8JKNUfEw")}
+                            </span>
+                        </p>
+                    </div>
+                </section>
+
                 <section class="scroll-section" id="eventi">
                     <span class="paragraph-title-bigger">Eventi</span>
                     <div class="item">
                         <span class="paragraph-title">Eventi</span>
                         <p class="paragraph">
+
 
                         </p>
                         <img src="./img/concert.png" class="concert" href="#album" alt="">
@@ -153,6 +195,24 @@
                 background.style.display = 'block'; // Mostra l'immagine completa
             };
         });
+    </script>
+
+    <script>
+        function createSpotifyLink(url) {
+            return `
+        
+            <button class="button">
+                <svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                    <!-- ... Codice SVG ... -->
+                </svg>
+                <a href="${url}" target="_blank">
+                    Ascoltalo su Spotify
+                </a>
+            </button>
+
+    `;
+        }
+
     </script>
 
 
