@@ -8,16 +8,17 @@
     overflow-y: auto;
     background: transparent !important;
     /* IE and Edge */
-    -ms-overflow-style: none;
+    /* -ms-overflow-style: none; */
     /* Firefox */
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     color: white;
 }
 
-.scrollable-homepage::-webkit-scrollbar {
-    display: none;
-    /* Safari and Chrome */
-}
+/* .scrollable-homepage::-webkit-scrollbar {
+    display: none; */
+/* Safari and Chrome */
+/* } */
+
 
 .glass-panel {
     /* From https://css.glass */
@@ -47,7 +48,7 @@
 
 .item img {
     width: 44dvh;
-    border-radius: 13px;
+    border-radius: 10px;
 }
 
 .header {
@@ -123,7 +124,7 @@
 
     .item img {
         min-width: 30dvh;
-        border-radius: 13px;
+
         height: auto;
     }
 
@@ -153,9 +154,42 @@
         display: none;
     }
 
+    .goto-spotify {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 2dvh 0dvh;
+    }
+
     .goto-spotify-bigger {
         display: none;
     }
+}
+
+
+@media screen and (max-width: 700px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25dvh;
+    }
+
+    .item {
+        flex-direction: column;
+        gap: 1.5dvh;
+    }
+
+    .item img {
+        max-width: 40dvh;
+
+    }
+
+    .concert {
+        width: 2dvh;
+    }
+
 }
 
 @media screen and (max-width: 591px) {
@@ -166,8 +200,35 @@
     }
 
     .item img {
-        max-width: 35dvh;
-        border-radius: 13px;
+        max-width: 30dvh;
+
+    }
+
+    .concert {
+        width: 2dvh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .griglia {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 11dvh;
+    }
+
+    .item {
+        flex-direction: column;
+        gap: 1.5dvh;
+    }
+
+    .item img {
+        max-width: 25dvh;
+
+    }
+
+    .paragraph {
+        font-size: 1.8dvh;
+        padding-left: 3dvw;
     }
 
     .concert {
@@ -197,35 +258,8 @@
 
 }
 
-@media screen and (max-width: 400px) {
-    .griglia {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 15dvh;
-    }
-
-    .item {
-        flex-direction: column;
-        gap: 1.5dvh;
-    }
-
-    .item img {
-        max-width: 25dvh;
-        border-radius: 13px;
-    }
-
-    .concert {
-        width: 2dvh;
-    }
-}
 
 
-
-.paragraph a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .footer {
     color: rgb(128, 6, 6);
@@ -240,3 +274,4 @@
     backdrop-filter: blur(13.3px);
     -webkit-backdrop-filter: blur(13.3px);
 }
+

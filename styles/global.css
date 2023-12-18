@@ -17,6 +17,12 @@ body::-webkit-scrollbar {
   /* Safari and Chrome */
 }
 
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 .header {
   position: fixed;
@@ -26,4 +32,26 @@ body::-webkit-scrollbar {
   height: 100px;
   background-color: transparent !important;
   z-index: 100;
+}
+
+
+/*Scrollbar rossa*/
+
+::-webkit-scrollbar {
+  width: 12px;
+  /* background: blue; */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  visibility: hidden;
+  background: red;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 991px) {
+  ::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+
 }
