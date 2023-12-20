@@ -1,8 +1,28 @@
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2dvh;
-    margin-top: 5dvh;
+    margin-top: -15dvh;
+    color: rgb(128, 6, 6);
+    font-size: larger;
+    font-weight: bolder;
+    height: 15dvh;
+    background: rgba(7, 1, 1, 0.94);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    flex-wrap: wrap;
+}   
+
+.logo-theweeknd {
+    --logo-size: 30px;
+    background: url('../icon/logo/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    border: none !important;
+
 }

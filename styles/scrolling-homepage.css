@@ -8,9 +8,9 @@
     overflow-y: auto;
     background: transparent !important;
     /* IE and Edge */
-    /* -ms-overflow-style: none; */
+    -ms-overflow-style: none;
     /* Firefox */
-    /* scrollbar-width: none; */
+    scrollbar-width: none;
     color: white;
 }
 
@@ -237,6 +237,14 @@
 }
 
 @media screen and (min-width: 991px) {
+    .scroll-section:nth-child(even) .item {
+        flex-direction: row-reverse;
+    }
+
+    .scroll-section:nth-child(odd) .item {
+        flex-direction: row;
+    }
+
 
     .grid-bigger {
         display: flex;
@@ -256,22 +264,13 @@
         gap: 30dvh;
     }
 
+
+
+
 }
 
-
-
-
-.footer {
-    color: rgb(128, 6, 6);
-    font-size: larger;
-    font-weight: bolder;
-    height: 15dvh;
-
-    /*glass*/
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13.3px);
-    -webkit-backdrop-filter: blur(13.3px);
+.goto-spotify.album {
+    text-decoration: underline;
+    color: red;
 }
 

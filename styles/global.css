@@ -37,21 +37,21 @@ a {
 
 /*Scrollbar rossa*/
 
+/* @media screen and (min-width: 991px) { */
+
 ::-webkit-scrollbar {
-  width: 12px;
-  /* background: blue; */
-  border-radius: 10px;
+  visibility: visible;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-thumb {
-  visibility: hidden;
-  background: red;
-  border-radius: 10px;
+  background: transparent;
+  border-radius: 40px;
+  background-color: rgb(81, 16, 3);
 }
 
-@media screen and (min-width: 991px) {
-  ::-webkit-scrollbar-thumb {
-    visibility: visible;
+@media screen and (max-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 0;
   }
-
 }
