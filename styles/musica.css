@@ -1,0 +1,27 @@
+.musica .contenitore {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2dvw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    height: 100%;
+    /* max-height: 100dvh; */
+}
+
+.musica .griglia {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 18dvh;
+}
+
+.musica footer {
+    margin-top: 10%;
+}
+
+.musica .album {
+    height: 40dvh;
+    min-width: 19dvw;
+}

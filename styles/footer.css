@@ -19,6 +19,7 @@ footer {
     -webkit-backdrop-filter: blur(7.6px);
     border-radius: 0;
     height: 20dvh;
+    width: 100%;
 }
 
 footer .info {
