@@ -140,7 +140,7 @@
   margin-right: 1vw;
   line-height: var(--bs-offcanvas-title-line-height);
   transform: all 0.3s ease-in-out;
-  font-size: larger !important;
+  font-size: large !important;
   font-weight: bold;
 }
 
@@ -258,5 +258,11 @@
     font-weight: bolder;
     margin: 0 0.5vw;
     transition: all 0.2s ease-in-out;
+  }
+}
+
+@media (min-width:991px) and (max-width:1000px) {
+  #offcanvasNavbar {
+    font-size: x-large;
   }
 }

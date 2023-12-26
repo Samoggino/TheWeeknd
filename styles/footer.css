@@ -9,20 +9,48 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 4dvh;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    /* From https://css.glass */
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border-radius: 0;
+    height: 32dvh;
+}
+
+footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1dvw;
 }
 
 footer img {
-    width: 30%;
+    width: 10%;
 }
 
-footer a {
-    font-size: xx-large;
+.documentazione {
+    font-size: large;
 }
 
 footer svg {
-    --size: 0.7em;
+    --size: 0.9em;
     width: var(--size);
     height: var(--size);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    padding-top: 2dvh;
+    width: 100%;
+    position: relative;
+    left: -1%;
 }
 
 .icons {
@@ -40,14 +68,12 @@ footer svg {
         justify-content: center;
         flex-direction: column;
         align-items: flex-end;
-        flex-wrap: nowrap;
         align-content: center;
     }
 
     .icon-section {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         height: 100%;
     }
 
@@ -56,12 +82,19 @@ footer svg {
     }
 }
 
+
+
 @media screen and (min-width: 991px) {
     footer svg {
         --size: 1em;
     }
 }
 
+@media (max-width: 767px) {
+    footer {
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 591px) {
     footer a {
@@ -70,5 +103,33 @@ footer svg {
 
     footer svg {
         --size: 1em;
+    }
+
+    footer img {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:900px) {
+    .row {
+        position: relative;
+    }
+}
+
+@media screen and (max-width:591px) {
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 5dvw;
+    }
+}
+
+@media screen and (min-width:991px) {
+    .documentazione {
+        font-size: x-large;
+    }
+
+    footer svg {
+        --size: 1.6em;
     }
 }
