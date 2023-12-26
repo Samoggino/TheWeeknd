@@ -14,11 +14,7 @@
 .musica .griglia {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 18dvh;
-}
-
-.musica footer {
-    margin-top: 10%;
+    margin-top: 3dvh;
 }
 
 .musica .album {
