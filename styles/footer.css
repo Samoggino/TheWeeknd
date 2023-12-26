@@ -18,7 +18,7 @@ footer {
     backdrop-filter: blur(7.6px);
     -webkit-backdrop-filter: blur(7.6px);
     border-radius: 0;
-    height: 32dvh;
+    height: 20dvh;
 }
 
 footer .info {
@@ -90,12 +90,6 @@ footer svg {
     }
 }
 
-@media (max-width: 767px) {
-    footer {
-        height: auto;
-    }
-}
-
 @media screen and (max-width: 591px) {
     footer a {
         font-size: medium;
@@ -132,4 +126,5 @@ footer svg {
     footer svg {
         --size: 1.6em;
     }
+
 }
