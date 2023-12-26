@@ -1,28 +1,74 @@
+.logo-theweeknd {
+    border: none !important;
+    padding: 0;
+    margin: 0;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: -15dvh;
-    color: rgb(128, 6, 6);
-    font-size: larger;
-    font-weight: bolder;
-    height: 15dvh;
-    background: rgba(7, 1, 1, 0.94);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    flex-wrap: wrap;
-}   
+    padding-bottom: 4dvh;
+}
 
-.logo-theweeknd {
-    --logo-size: 30px;
-    background: url('../icon/logo/logo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: var(--logo-size);
-    height: var(--logo-size);
-    border: none !important;
+footer img {
+    width: 30%;
+}
 
+footer a {
+    font-size: xx-large;
+}
+
+footer svg {
+    --size: 0.7em;
+    width: var(--size);
+    height: var(--size);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2dvw;
+}
+
+@media screen and (min-width:768px) {
+
+    .logo-container {
+        position: relative;
+        right: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .icon-section {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    footer {
+        padding-bottom: 2dvh;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    footer svg {
+        --size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 591px) {
+    footer a {
+        font-size: medium;
+    }
+
+    footer svg {
+        --size: 1em;
+    }
 }

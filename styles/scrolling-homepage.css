@@ -265,12 +265,10 @@
     }
 
 
-
-
 }
 
-.goto-spotify.album {
+.goto-spotify.album,
+.goto-spotify-bigger.album {
     text-decoration: underline;
     color: red;
 }
-
