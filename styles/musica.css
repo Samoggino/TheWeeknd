@@ -1,23 +1,111 @@
+.musica {
+    transition: all 0.2s ease-in-out;
+}
+
 .musica .contenitore {
     margin-top: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 2dvw;
+    gap: 1dvw;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding: 10px;
     height: 100%;
-    /* max-height: 100dvh; */
+    max-width: 80dvw;
+    max-height: 160dvh;
+    padding-bottom: 20dvh;
+    padding-top: 4dvh;
 }
 
 .musica .griglia {
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr;
     margin-top: 3dvh;
+    gap: 0dvh;
 }
 
 .musica .album {
-    height: 40dvh;
-    min-width: 19dvw;
+    min-height: 160px;
+    min-width: 380px;
+}
+
+.musica h1 {
+    transition: all 0.1s ease-in-out;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.5em;
+    text-align: center;
+    color: red;
+    text-shadow: 0 0 10px #000;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 768px) {
+    .musica h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 591px) {
+    .musica h1 {
+        font-size: 1.5em;
+    }
+
+    .musica .album {
+        min-width: 10dvh;
+    }
+
+    .musica .section-footer {
+        position: relative;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .musica .contenitore {
+        max-width: 80dvw;
+        max-height: 60dvh;
+        padding-top: 16dvh;
+    }
+}
+
+.musica .section-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width:991px) {
+    .musica .griglia {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width:1300px) {
+    footer .info .documentazione a {
+        font-size: larger;
+    }
+}
+
+
+@media screen and (min-width:991px) and (max-width:1300px) {
+    footer .info .documentazione a {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width:987px) {
+    .musica .section-footer {
+        position: relative;
+    }
+
+    .musica .contenitore {
+        padding-bottom: 0;
+    }
 }

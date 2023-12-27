@@ -1,4 +1,4 @@
-.logo-theweeknd {
+footer .logo-theweeknd {
     border: none !important;
     padding: 0;
     margin: 0;
@@ -32,29 +32,40 @@ footer img {
     width: 10%;
 }
 
-.documentazione {
+footer .info .documentazione a {
     font-size: large;
+    transition: all 0.1s ease-in-out;
+}
+
+footer .info .documentazione a:hover {
+    color: red;
+    transform: scale(1.1);
 }
 
 footer svg {
     --size: 0.9em;
     width: var(--size);
     height: var(--size);
+    transition: all 0.1s ease-in-out;
 }
 
-.container {
+footer svg:hover {
+    transform: scale(1.1);
+}
+
+footer .container {
     margin: 0;
     padding: 0;
 }
 
-.row {
+footer .row {
     padding-top: 2dvh;
     width: 100%;
     position: relative;
     left: -1%;
 }
 
-.icons {
+footer .icons {
     display: flex;
     justify-content: center;
     gap: 2dvw;
@@ -62,7 +73,7 @@ footer svg {
 
 @media screen and (min-width:768px) {
 
-    .logo-container {
+    footer .logo-container {
         position: relative;
         right: 10%;
         display: flex;
@@ -72,7 +83,7 @@ footer svg {
         align-content: center;
     }
 
-    .icon-section {
+    footer .icon-section {
         display: flex;
         align-items: center;
         height: 100%;
@@ -80,14 +91,6 @@ footer svg {
 
     footer {
         padding-bottom: 2dvh;
-    }
-}
-
-
-
-@media screen and (min-width: 991px) {
-    footer svg {
-        --size: 1em;
     }
 }
 
@@ -101,31 +104,32 @@ footer svg {
     }
 
     footer img {
-        width: 15%;
+        width: 12%;
     }
-}
 
-@media screen and (min-width:768px) and (max-width:900px) {
-    .row {
-        position: relative;
-    }
-}
-
-@media screen and (max-width:591px) {
-    .icons {
+    footer .icons {
         display: flex;
         justify-content: center;
         gap: 5dvw;
     }
+
+    footer .documentazione a {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:900px) {
+    footer .row {
+        position: relative;
+    }
 }
 
 @media screen and (min-width:991px) {
-    .documentazione {
+    footer .documentazione {
         font-size: x-large;
     }
 
     footer svg {
         --size: 1.6em;
     }
-
 }
